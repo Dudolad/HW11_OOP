@@ -6,6 +6,6 @@ class Contact
 {
 public:
 	virtual void show() const = 0;
-	virtual ~Contact() = default;
+	virtual ~Contact() {}; 
 };
 
