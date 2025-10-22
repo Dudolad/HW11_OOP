@@ -1,11 +1,11 @@
 #pragma once
 #include <iostream>
-using namespace std;
+using namespace std; 
 
-class Contact
-{
-public:
+class Contact 
+{ 
+public: 
 	virtual void show() const = 0;
-	virtual ~Contact() {}; 
+	virtual string getSurname() const = 0;
+	virtual ~Contact() {};
 };
-

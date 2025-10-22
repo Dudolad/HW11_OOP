@@ -13,5 +13,6 @@ protected:
 public:
     Person(string s, string a, string p);
     void show() const override;
+    string getSurname() const override { return surname; }
 };
 

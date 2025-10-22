@@ -29,3 +29,27 @@ ContactBook::~ContactBook()
 {
 	clear();
 }
+
+void ContactBook::editContact(int index, Contact* newContact)
+{
+	if (index >= 0 && index < contacts.size())
+	{
+		delete contacts[index];       
+		contacts[index] = newContact; 
+	}
+	else
+	{
+		cout << "Невірний індекс для редагування!\n";
+	}
+}
+
+vector<Contact*> ContactBook::searchBySurname(const string& surname) const
+{
+	vector<Contact*> result;
+	for (auto c : contacts)
+	{
+		if (c->getSurname() == surname)
+			result.push_back(c);
+	}
+	return result;
+}

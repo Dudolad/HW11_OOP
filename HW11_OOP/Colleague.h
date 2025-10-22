@@ -15,5 +15,6 @@ protected:
 public:
     Colleague(string org, string addr, string ph, string fx, string cp);
     void show() const override;
+    string getSurname() const override { return contactPerson; }
 };
 

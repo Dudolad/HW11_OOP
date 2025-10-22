@@ -14,5 +14,6 @@ protected:
 public:
     Friend(string s, string a, string p, string bd);
     void show() const override;
+    string getSurname() const override { return surname; }
 };
 
